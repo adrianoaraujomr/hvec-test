@@ -1,0 +1,50 @@
+{
+  "name": "front-end-pwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "HOST=0.0.0.0 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
+    ]
+  },
+  "dependencies": {
+    "min-document": "2.19.0",
+    "react": "15.5.3",
+    "react-dom": "15.5.3",
+    "react-scripts": "4.0.0",
+    "video.js": "6.2.0",
+    "videojs-flash": "^2.2.1",
+    "webpack": "4.44.2"
+  },
+  "devDependencies": {
+    "@expo/webpack-config": "^0.13.3"
+  },
+  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
